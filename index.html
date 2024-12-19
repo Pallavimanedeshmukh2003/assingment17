@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+   <style>
+    .container{
+        height: 400px;
+        width: 700px;
+        border-radius: 60px;
+        display: flex;
+        margin: 80px auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .event-sport{
+        
+        border-radius: 20px;
+        width: 40%;
+        border:3px solid rgb(167, 137, 143) ;
+        box-shadow: 0  0 10px 3px #371414;
+        border-right: none;
+        padding-left: 40px;
+        background-color: #ccffcc;
+    }
+    .event-dance{
+     background-color:#ccffcc ;
+      border-radius: 20px;
+      width: 40% ;
+      border:3px solid rgb(167, 137, 143) ;
+      box-shadow: 0  0 10px 3px #371414;
+      border-left: solid;
+      padding-left: 40px;
+      font-size: 30px;
+     
+    }
+   .clg-name{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     padding-left: 0px;
+     color: #990000;
+     font-size: 30px;
+     
+   }
+  .program{
+        font-size: 20px;
+        color: #ff3333;
+     }
+     .event-logo{
+        height: 90px;
+        padding-top: 0px;
+       padding-left: 0px;
+       padding-block-start: 9%;
+     }
+     .sport{
+        height: 100px;
+
+     }
+     .dancing{
+        height: 100px;
+     }
+    /*mobile */
+    @media (max-widht: 600px){
+        .container{
+            flex-direction:column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+        .event-sport{
+            width: 400px;
+           border-bottom: none;
+           border-right:solid ;
+        
+        }
+        .event-dance{
+            width: 400px;
+            border-top: solid;
+            border-left: solid;
+            height: 500px;
+            font-size: 45px;
+        }
+    
+
+    }
+    /*tablet*/
+    @media(min-width:601px)and (max-width:800px){
+        .container{
+            flex-direction:column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+        .event-sport{
+            width: 630px;
+           border-bottom: none;
+           border-right:solid ;
+        
+        }
+        .event-dance{
+            width: 630px;
+            border-top: solid;
+            border-left: solid;
+            height: 500px;
+            font-size: 45px;
+        }
+    
+
+    }
+    /*laptop*/
+    @media(min-width:801px)and (max-width:1024px){
+        .container{
+            flex-direction:column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+        .event-sport{
+            width: 850px;
+           border-bottom: none;
+           border-right:solid ;
+        
+        }
+        .event-dance{
+            width: 850px;
+            border-top: solid;
+            border-left: solid;
+            height: 400px;
+            font-size: 60px;
+        }
+    
+    }
+       .date-time{
+       font-size: 10px;
+       color: #f80199;
+}
+   .team{
+    padding-left: 40px;
+    height: 100px;
+   }
+   </style>
+</head>
+<body>
+  <div class="container">
+  <div class="event-sport">
+    <img src="/collagelogo.jpg" class="event-logo">
+    <span class="clg-name">SMSMPITR,Akluj</span>
+    <p class="program">Event:Sport Competition</p>
+    <img src="/sports.png" class="sport">
+    <img src="/team.png"  class="team">
+    <form class="date-time">
+        Date:<input type="date" />
+       Time: <input type="time" />
+      </form>
+  </div>
+  <div class="event-dance">
+     <img src="/collagelogo.jpg" class="event-logo">
+     <span class="clg-name">SMSMPITR,Akluj</span>
+     <p class="program">Event:Dance Competition</p>
+     <img src="/dancing.png" class="dancing">
+     <img src="/team.png"  class="team">
+     <form class="date-time">
+        Date:<input type="date" />
+       Time: <input type="time" />
+      </form>
+</div>
+</div>
+</body>
+</html>
